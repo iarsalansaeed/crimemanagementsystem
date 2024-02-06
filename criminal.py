@@ -190,15 +190,51 @@ class Criminal:
         # Clear Button
         btn_clear=Button(button_frame,text='Clear',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
         btn_clear.grid(row=0,column=3,padx=3,pady=3)
+        
+        # bg crime pic
+        img_crime=Image.open('images/background.jpg')
+        img_crime=img_crime.resize((455,200))
+        self.photocrime=ImageTk.PhotoImage(img_crime)
 
+        self.img_crime=Label(upper_frame,image=self.photocrime)
+        self.img_crime.place(x=850,y=0,width=455,height=200)
 
         # DOWN-FRAME
         down_frame=LabelFrame(Main_frame,bd=2,relief=RIDGE,text='Criminal Information Table',font=('times new roman',11,'bold'),fg='red',bg='white')
-        down_frame.place(x=10,y=250,width=1322,height=235)
+        down_frame.place(x=10,y=250,width=1322,height=240)
 
         # SEARCH-FRAME
         search_frame=LabelFrame(down_frame,bd=2,relief=RIDGE,text='Search Criminal Record',font=('times new roman',11,'bold'),fg='red',bg='white')
-        search_frame.place(x=3,y=0,width=1312,height=50)
+        search_frame.place(x=3,y=0,width=1312,height=55)
+        
+        search_by=Label(search_frame,text='Search By:',font=('arial',9,'bold'),bg='red',fg='white')
+        search_by.grid(row=0,column=0,sticky=W,padx=5)
+
+        combo_search_box=ttk.Combobox(search_frame, font=('arial',9,'bold'), width=18, state='readonly')
+        combo_search_box['value']=('Select Option','Case ID','Criminal No')
+        combo_search_box.current(0)
+        combo_search_box.grid(row=0,column=1,sticky=W,padx=5)
+        
+        search_txt=ttk.Entry(search_frame,width=22,font=('arial',9,'bold'))
+        search_txt.grid(row=0,column=2,sticky=W,padx=5)
+
+        # search Button
+        btn_search=Button(search_frame,text='Search',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
+        btn_search.grid(row=0,column=3,sticky=W,padx=5)
+
+        # all Button
+        btn_all=Button(search_frame,text='Show All',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
+        btn_all.grid(row=0,column=4,sticky=W,padx=5)
+
+        #table
+        table_frame=Frame(down_frame,bd=2, relief=RIDGE)
+        table_frame.place(x=3,y=60,width=1312,height=155)
+
+        #scroll
+        scroll_x=ttk.Scrollbar(table_frame,orient=HORIZONTAL)
+        scroll_y=ttk.Scrollbar(table_frame,orient=VERTICAL)
+
+
 
 if __name__=="__main__":
     root=Tk()
