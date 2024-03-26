@@ -3,29 +3,23 @@ Criminal Management System
 Overview
 The Criminal Management System is a graphical user interface application developed using the Tkinter library in Python. It provides a platform for managing criminal records, allowing users to input and store information about criminals.
 
-Features
-User-Friendly Interface
-Image Display
-Criminal Information Management
-Radio Buttons
-Buttons for Actions
 
-Installation:
-Ensure you have Python installed on your system.
-Install the required libraries using "pip install Pillow".
-Run the Application:
+## 1. Git as VCS
+I have used git before for out VCS or as SCM. 
+It keeps track of changes in project, collaborate with others, and manage different versions of your code easily, share your code with fellow and allowing them to contribute with access limitation etc, like fork and PR etc. Its makes the work seamless and more faster. It allows users to manage their codebase efficiently, revert changes if needed, and work on different features concurrently.
 
-Execute the code provided in the criminal.py file.
 
-The NCR logo and police images are displayed in separate frames for visual appeal.
-Dependencies
-- Python 3.x
-- Tkinter library
-- Pillow library (for working with images)
+## 2. UML Diagrams
+UML diagrams :<be>
+1. [Activity Diagram](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/activity-diagram.jpg) - Activity Diagram shows the working of Crime management system.
+2. [Sequence Diagram](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/sequence-diagram.jpg) - This diagram shows the connection between objects by showing messages.
+3. [Use Case Diagram](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/Use-case-diagram.jpg) - This Use Case Diagram shows the interaction between CMS GUI and user/administrator.
+4. [Class Diagram](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/class-diagram.jpg) - The class diagram shows the structure and relationships of classes in a system.
 
-Notes
-The application uses the Tkinter library for GUI and the Pillow library for handling images.
-Ensure that the required image files (ncrlogo.png, police1.png, police2.png, police3.png) are present in the specified paths or update the paths accordingly.
 
-UML-Diagram
-Currently till this development I have created one UML class diagram. It is in class-uml diretory. I will update further upon the completion of the project.
+## 5. Clean Code Developement - CCD
+Clean code Developement [Cheatsheet](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/cheatsheet.txt).
+
+
+
+
