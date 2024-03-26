@@ -1,0 +1,9 @@
+1. Meaningful names: Use meaningful names for variables, functions, and classes.
+2. Do One Thing: Each part of my code should do just one job.
+3. Comments: Used comments to say why you I did something.
+4. Make it Look Nice: I kept my code format the same so its easy to read and understand.
+5. Handle Mistakes: Used Error handling messages specially using queries with database in order to know what went wrong, helpful messages when things go wrong.
+6. Made it Clearer: Changed my code to make it easier to read without changing how it works.
+7. Repeating: Not to write the same thing over and over again.
+8. One Job: created classes and functions focused on doing just one job.
+9. Git: Used git for Version control system to have backup and versioning of my code. In order if I have to revert back, I only use few commands to get back to my desired commit.
