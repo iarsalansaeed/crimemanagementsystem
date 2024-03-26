@@ -219,11 +219,11 @@ class Criminal:
         btn_update.grid(row=0,column=1,padx=3,pady=3)
 
         # Delete Button
-        btn_delete=Button(button_frame,text='Delete',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
+        btn_delete=Button(button_frame,command=self.delete_data,text='Delete',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
         btn_delete.grid(row=0,column=2,padx=3,pady=3)
 
         # Clear Button
-        btn_clear=Button(button_frame,text='Clear',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
+        btn_clear=Button(button_frame,command=self.clear_data,text='Clear',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
         btn_clear.grid(row=0,column=3,padx=3,pady=3)
         
         # bg crime pic
@@ -245,20 +245,22 @@ class Criminal:
         search_by=Label(search_frame,text='Search By:',font=('arial',9,'bold'),bg='red',fg='white')
         search_by.grid(row=0,column=0,sticky=W,padx=5)
 
-        combo_search_box=ttk.Combobox(search_frame, font=('arial',9,'bold'), width=18, state='readonly')
-        combo_search_box['value']=('Select Option','Case ID','Criminal No')
+        self.var_com_search=StringVar()
+        combo_search_box=ttk.Combobox(search_frame,textvariable=self.var_com_search,font=('arial',9,'bold'), width=18, state='readonly')
+        combo_search_box['value']=('Select Option','Case ID')
         combo_search_box.current(0)
         combo_search_box.grid(row=0,column=1,sticky=W,padx=5)
-        
-        search_txt=ttk.Entry(search_frame,width=22,font=('arial',9,'bold'))
+
+        self.var_search=StringVar()        
+        search_txt=ttk.Entry(search_frame,textvariable=self.var_search,width=22,font=('arial',9,'bold'))
         search_txt.grid(row=0,column=2,sticky=W,padx=5)
 
         # search Button
-        btn_search=Button(search_frame,text='Search',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
+        btn_search=Button(search_frame,command=self.search_data,text='Search',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
         btn_search.grid(row=0,column=3,sticky=W,padx=5)
 
         # all Button
-        btn_all=Button(search_frame,text='Show All',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
+        btn_all=Button(search_frame,command=self.fetch_data,text='Show All',font=('arial',13,"bold"),width=11,bg='blue',fg='white')
         btn_all.grid(row=0,column=4,sticky=W,padx=5)
 
 
@@ -375,6 +377,7 @@ class Criminal:
                 ))
                 conn.commit()
                 self.fetch_data()
+                self.clear_data()
                 conn.close()
                 messagebox.showinfo('Success', 'Criminal record has been added')
             except Exception as es:
@@ -452,10 +455,71 @@ class Criminal:
                         return
                 conn.commit()
                 self.fetch_data()
+                self.clear_data()
                 conn.close()
                 messagebox.showinfo('Success','Criminal record successfully updated')    
             except Exception as es:
                 messagebox.showerror('Error', f'Due to {str(es)}')
+
+    def delete_data(self):
+            if self.var_name.get() == "":
+                messagebox.showerror('Error', 'All fields are required')
+            else:
+                try: 
+                    Delete=messagebox.askyesno('Delete','Are you sure to Delete this criminal record')
+                    if Delete>0:
+                        conn = mysql.connector.connect(host='localhost', user='root', password='arsalan123', database='cms')
+                        my_cursor = conn.cursor()
+                        sql='delete from criminal1 where Case_id=%s'
+                        value=(self.var_case_id.get(),)
+                        my_cursor.execute(sql,value)
+                    else:
+                        if not Delete:
+                            return
+                    conn.commit()
+                    self.fetch_data()
+                    self.clear_data()
+                    conn.close()
+                    messagebox.showinfo('Success', 'Criminal record deleted successfully')
+                except Exception as es:
+                    messagebox.showerror('Error', f'Due to {str(es)}')
+
+    def clear_data(self):
+        self.var_case_id.set("")
+        self.var_criminal_no.set("")
+        self.var_name.set("")
+        self.var_nickname.set("")
+        self.var_arrest_date.set("")
+        self.var_date_of_crime.set("")
+        self.var_address.set("")
+        self.var_age.set("")
+        self.var_occupation.set("")
+        self.var_birthMark.set("")
+        self.var_crime_type.set("")
+        self.var_father_name.set("")
+        self.var_gender.set("")
+        self.var_wanted.set("")
+
+
+    #search data
+    def search_data(self):
+        if self.var_com_search.get()=="":
+            messagebox.showerror('Error', 'All Fields are required.')
+        else:
+            try:
+                conn = mysql.connector.connect(host='localhost', user='root', password='arsalan123', database='cms')
+                my_cursor = conn.cursor()
+                my_cursor.execute('select * from criminal1 where ' +str(self.var_com_search.get())+" LIKE'%"+str(self.var_search.get()+" %'"))
+                rows=my_cursor.fetchall()
+                if len(rows)!=0:
+                    self.criminal_table.delete(*self.criminal_table.get_children)
+                    for i in rows:
+                        self.criminal_table.insert("", END, values=i)
+                    conn.commit()
+                    conn.close()
+            except Exception as es:
+                    messagebox.showerror('Error', f'Due to {str(es)}')
+
 
 if __name__=="__main__":
     root=Tk()
