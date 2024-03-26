@@ -47,6 +47,7 @@ Whole Pipeline output - [Pipeline Status - Console Output](https://github.com/ia
 
 ## 9. VS Studio IDE
 I love using VS because it's super handy and has lots of cool stuff. It helps me write and test my code, and it's easy to use. Plus, it works great with Git, which is awesome for keeping track of changes in my projects.<br>
+Code . : My most fav shortcut, In terminal, code . opens the current directory in VS Code.<br>
 Ctrl + S: Save current file.<br>
 Ctrl + F5: Run application without debugging.<br>
 Ctrl + F: Find text in your code.<br>
