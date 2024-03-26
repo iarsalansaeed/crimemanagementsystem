@@ -28,6 +28,12 @@ UML diagrams :<be>
 ## 5. Clean Code Developement - CCD
 Clean code Developement [Cheatsheet](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/cheatsheet.txt).
 
+Examples:
+Following are the transformation example of many lines of code into fewer lines of code, more readable and reusable.<br>
+1. [Example 1](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/criminal.py#L29-L40) - Setting up variable one by one to setting up variable by using a function, by this way our code lines becomes short and is easily understandable.<br>
+2. [Example 2](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/criminal.py#L286-L315) - Another example of CCD where I was writing one by column name and assigning it a specific width. It was repeating thing so I thought why not use a function and do it. I then used a function and did it, code is very clean and understandable.
+3. [Example 3](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/criminal.py#L403-L426) - Here for filling my form as I fetch data, I needed to use all variables, tried it one on one it was much of work repeated so again used function and a variable named 'variables' to loop over and make the code clean.<br>
+
 ## 6.& 7. Build and CI/CD
 I have used Jenkins for the build and Continuous Integration/Continuous Deployment (CI/CD). My project is in Python, hence I have used Jenkins with which I am used to working, Python doesn't require build as java programs require for which Maven, Ant etc are used. 
 
