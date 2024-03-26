@@ -35,7 +35,7 @@ Jenkins LogIn [LogIn Page]()
 Setting SCM [SCM - Setup](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/SCM-jenkins-linking.png) - This is SCM stage setting up by configuring the pipeline
 Build Trigger [Build - Trigger](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/Build-triggers.png) - In this stage I have configured my project's build trigger, as to when it should be triggerd.
 This is a screenshot of the whole [CI/CD](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/Jenkins-ci-cd.png) pipeline.
-Whole Pipeline output.- [![pipeline status/console output](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/jenkins-complete-ci-cd.png)
+Whole Pipeline output.- [![pipeline status/console output](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/jenkins-complete-ci-cd.png)]
 
 ## 8. Unit tests
 
