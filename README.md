@@ -17,9 +17,9 @@ UML diagrams :<be>
 4. [Class Diagram](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/class-diagram.jpg) - The class diagram shows the structure and relationships of classes in a system.
 
 ## 3. DDD
-1. [Core Domain Chart](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/core-domain-chartt.png)<br>
-2. [Context Mapping Diagram](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/context-mapping-cms.png) <br>
-3. [Event storming diagram](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/event-storming.png)<br>
+1. [Core Domain Chart](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/core-domain-chartt.png) - This chart shows domain, subdomains, and interactions of a crime management system, offering a detailed overview & workflow<br>
+2. [Context Mapping Diagram](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/context-mapping-cms.png) - Context mapping clarifies how different pieces fit together in complex systems. <br>
+3. [Event storming diagram](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/class-uml/event-storming.png) - Event storming is a teamwork method to understand complex ideas better. <br>
 
 ## 4. Metrics
 [![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/project/overview?id=iarsalansaeed_crimemanagementsystem)
