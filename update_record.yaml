@@ -1,0 +1,17 @@
+UpdateRecord:
+    Command: UPDATE_RECORD
+    Parameters:
+        - case_id: String
+        - criminal_no: String
+        - name: String
+        - nickname: String
+        - arrest_date: String
+        - date_of_crime: String
+        - address: String
+        - age: String
+        - occupation: String
+        - birthmark: String
+        - crime_type: String
+        - father_name: String
+        - gender: String
+        - wanted: String
