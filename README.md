@@ -44,6 +44,9 @@ This is a screenshot of the whole [CI/CD](https://github.com/iarsalansaeed/crime
 Whole Pipeline output - [Pipeline Status - Console Output](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/jenkins-complete-ci-cd.png)<br>
 
 ## 8. Unit tests
+These unit test files are created to validate the functionality of inserting data into the database and checking the database connection. The test_add_data method ensures that new records can be successfully added.
+1. [Unit test 1](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/unittest.py) - This file is used to insert bulk dummy data into database by using a for loop.
+2. [Unit test 1](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/unit-test2.py) - This however is used to only enter a single record into the database, I have used it when I had an issue with insertion at application, I used these and then solved my issue in application too.
 
 ## 9. VS Studio IDE
 I love using VS because it's super handy and has lots of cool stuff. It helps me write and test my code, and it's easy to use. Plus, it works great with Git, which is awesome for keeping track of changes in my projects.<br>
