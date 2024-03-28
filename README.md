@@ -64,5 +64,9 @@ Ctrl + Shift + B: Build your solution.<br>
 Ctrl + .: Open the Quick Actions and Refactorings menu.<br>
 
 ## 10. Domain Specific Language (DSL)
+I have created DSL related  to my project, the dsl file is in yaml format, and it is used by execute.dsl to update and create record at database. The example here is for update record along with screen shot.
+1. [Yaml file](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/update_record.yaml) - contains my column names and name for what opration it is used, here it is UpdateRecord.
+2. [Interpreter File](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/execute_dsl.py) - Upon the execution of this code, The records are updated in the database.
+3. [ScreenShot](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/dsl-update-records.png) - Results after the interpreter file execution.
 
 ## 11. Functional Programming
