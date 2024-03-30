@@ -27,19 +27,25 @@ UML diagrams :<be>
 
 Few metrics that are listed below: 
 
-- Quality Gate Status [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ShrutiPatil2223_Student-Management-System&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+- Quality Gate Status [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
 
-- Bugs [![Bugs](https://sonarcloud.io/component_measures?metric=new_bugs&view=list&id=iarsalansaeed_crimemanagementsystem)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+- Bugs [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=bugs)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
 
-- Code Smells [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=ShrutiPatil2223_Student-Management-System&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+- Code Smells [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
 
-- Duplicated Lines [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=ShrutiPatil2223_Student-Management-System&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+- Duplicated Lines [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
 
-- Lines of Code [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=ShrutiPatil2223_Student-Management-System&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+- Lines of Code [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
 
-- Maintainability Rating [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=ShrutiPatil2223_Student-Management-System&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+- Reliability Rating [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
 
-- Security Rating [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=ShrutiPatil2223_Student-Management-System&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+- Security Rating [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+
+- Technical Debt [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+
+- Maintainability Rating [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
+
+- Vulnerabilities [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
 
 ## 5. Clean Code Developement - CCD
 Clean code Developement [Cheatsheet](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/cheatsheet.txt).
