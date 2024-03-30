@@ -41,8 +41,6 @@ Few metrics that are listed below:
 
 - Security Rating [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
 
-- Technical Debt [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
-
 - Maintainability Rating [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
 
 - Vulnerabilities [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=iarsalansaeed_crimemanagementsystem&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=iarsalansaeed_crimemanagementsystem)
