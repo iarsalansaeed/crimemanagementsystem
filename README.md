@@ -3,7 +3,7 @@ Criminal Management System
 Overview
 The Criminal Management System is a graphical user interface application developed using the Tkinter library in Python. It provides a platform for managing criminal records, allowing users to input and store information about criminals.
 
-
+[Criminal Management System GUI] - (https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/CMS-GUI.png)
 ## 1. Git as VCS
 I have used git before for out VCS or as SCM. 
 It keeps track of changes in project, collaborate with others, and manage different versions of your code easily, share your code with fellow and allowing them to contribute with access limitation etc, like fork and PR etc. Its makes the work seamless and more faster. It allows users to manage their codebase efficiently, revert changes if needed, and work on different features concurrently.
