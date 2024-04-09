@@ -58,7 +58,7 @@ Following are the transformation example of many lines of code into fewer lines 
 ## 6.& 7. Build and CI/CD
 I have used Jenkins for the build and Continuous Integration/Continuous Deployment (CI/CD). My project is in Python, hence I have used Jenkins with which I am used to working, Python doesn't require build as java programs require for which Maven, Ant etc are used. 
 
-Jenkins LogIn [LogIn Page]()<br>
+Jenkins LogIn [LogIn Page](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/jenkins-dashboard.png)<br>
 Setting SCM [SCM - Setup](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/SCM-jenkins-linking.png) - This is SCM stage setting up by configuring the pipeline.<br>
 Build Trigger [Build - Trigger](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/Build-triggers.png) - In this stage, I have configured my project's build trigger, as to when it should be triggerd.<br>
 This is a screenshot of the whole [CI/CD](https://github.com/iarsalansaeed/crimemanagementsystem/blob/main/jenkins/Jenkins-ci-cd.png) pipeline.<br>
